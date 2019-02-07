@@ -8,3 +8,15 @@ instead of running
 docker run -d --name <my-project> <username>/<my-project>
 run the following
 docker run -p 4000:80 -d --name <my-project> <username>/<my-project>
+	to rerun
+docker run -p 4000:80 -d <username>/<my-project>
+
+once this is done, either goto 
+http://0.0.0.0:4000
+or
+curl 0.0.0.0:4000
+which you'll see something like the following 
+
+```
+<h3>Hello World!</h3><b>Hostname:</b> c0784df2064d<br/><b>Visits:</b> <i>cannot connect to Redis, counter disabled</i>
+```
