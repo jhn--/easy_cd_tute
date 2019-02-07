@@ -5,16 +5,26 @@ https://medium.freecodecamp.org/how-to-set-up-continuous-deployment-in-your-home
 https://medium.com/@fidelvti/first-steps-with-docker-54cff8fe78f3
 
 instead of running 
+```
 docker run -d --name <my-project> <username>/<my-project>
+```
 run the following
+```
 docker run -p 4000:80 -d --name <my-project> <username>/<my-project>
+```
 	to rerun
+```
 docker run -p 4000:80 -d <username>/<my-project>
+```
 
 once this is done, either goto 
+```
 http://0.0.0.0:4000
+```
 or
+```
 curl 0.0.0.0:4000
+```
 which you'll see something like the following 
 
 ```
